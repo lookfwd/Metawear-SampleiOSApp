@@ -36,6 +36,7 @@
 #import "DeviceDetailViewController.h"
 #import "MBProgressHUD.h"
 #import "APLGraphView.h"
+#import "MetaWearApiTest-Swift.h"
 
 @interface DeviceDetailViewController ()
 @property (weak, nonatomic) IBOutlet UISwitch *connectionSwitch;
@@ -183,6 +184,10 @@
 @property (nonatomic) BOOL isObserving;
 
 @property (nonatomic, strong) UIDocumentInteractionController *controller;
+
+
+@property (nonatomic, strong) SocketIOClient *socket;
+
 @end
 
 @implementation DeviceDetailViewController
@@ -210,6 +215,15 @@
     
     // Start off the connection flow
     [self connectDevice:YES];
+    
+    NSURL* url = [[NSURL alloc] initWithString:@"http://78.47.228.218:8080"];
+    self.socket = [[SocketIOClient alloc] initWithSocketURL:url options:@{@"log": @NO, @"forcePolling": @NO}];
+    
+    [self.socket on:@"connect" callback:^(NSArray* data, SocketAckEmitter* ack) {
+        NSLog(@"socket connected");
+    }];
+    
+    [self.socket connect];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -939,6 +953,7 @@
         if (obj) {
             [self.accelerometerBMI160Graph addX:obj.x y:obj.y z:obj.z];
             [array addObject:obj];
+            [self.socket emit:@"sensor_data" withItems:@[[NSString stringWithFormat:@"%f %f %f", obj.x, obj.y, obj.z]]];
         }
     }];
 }

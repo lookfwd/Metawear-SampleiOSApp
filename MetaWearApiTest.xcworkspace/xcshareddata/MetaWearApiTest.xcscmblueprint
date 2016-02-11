@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6DB51F38D34EDBBEB31298F89D22CD93DC9EE165",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6DB51F38D34EDBBEB31298F89D22CD93DC9EE165" : 0,
+    "01C4019DAB2F13C7FB458F088D0A991884C46F1A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "17ED2708-9601-4FE5-9475-1163EAFF0D5A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6DB51F38D34EDBBEB31298F89D22CD93DC9EE165" : "Metawear-SampleiOSApp\/",
+    "01C4019DAB2F13C7FB458F088D0A991884C46F1A" : "Metawear-SampleiOSApp\/socket.io-client-swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MetaWearApiTest",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MetaWearApiTest.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/socketio\/socket.io-client-swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "01C4019DAB2F13C7FB458F088D0A991884C46F1A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lookfwd\/Metawear-SampleiOSApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6DB51F38D34EDBBEB31298F89D22CD93DC9EE165"
+    }
+  ]
+}

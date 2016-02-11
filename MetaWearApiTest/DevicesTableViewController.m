@@ -39,6 +39,7 @@
 #import "MovingAverage.h"
 #import <MetaWear/MetaWear.h>
 
+
 @interface DevicesTableViewController ()
 @property (nonatomic) NSArray *devices;
 @property (nonatomic) NSMutableDictionary *rssiAverages;
@@ -47,6 +48,7 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *scanningSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *metaBootSwitch;
+
 @end
 
 @implementation DevicesTableViewController
